@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:disenos/widgets/background.dart';
+import 'package:disenos/widgets/card_table.dart';
+import 'package:disenos/widgets/custom_bottom_navigation.dart';
 import 'package:disenos/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +22,7 @@ class HomeScreen extends StatelessWidget {
 
         ],
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 }
@@ -31,7 +34,10 @@ class _HomeBody extends StatelessWidget {
       child: Column(
         children: [
           // Titles
-          PageTitle()
+          PageTitle(),
+          
+          // Card Table
+          CardTable()
 
         ],
       ),
